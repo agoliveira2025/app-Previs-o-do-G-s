@@ -1,0 +1,94 @@
+Crie uma aplicativo em HTML +JS com seguintes campos e funções:
+Esse aplicativo vai se chamar Gás está acabando, a função do aplicativo e informar 5 dias antes 
+do gás acabar e informar que já está perto de comprar.
+
+Seguintes campos:
+Data compra Gás
+Data Gás acabou
+Histórico dos dias que durou o gás nos ultimo 12 meses, esses dados deve ser armazenados para fins de consultas, servir de base de quando vai ser próxima compra do gás
+
+-----------------------------------------------------------------------------------------------------------
+
+Prompt para criação do aplicativo "Previsão do Gás"
+
+Desenvolva um aplicativo web simples utilizando HTML + JavaScript (sem backend próprio) chamado "Previsão do Gás", com armazenamento de dados na nuvem usando Firebase Firestore.
+
+Objetivo do aplicativo:
+Avisar o usuário 5 dias antes do gás acabar, com um alerta interno no navegador e também na interface, com base no histórico de duração dos botijões anteriores.
+
+Funcionalidades principais:
+Data da compra do gás
+Data Gás acabou
+
+Campo para o usuário informar quando o gás foi comprado e quando acabou.
+
+
+Registrar Histórico dos últimos 12 meses
+
+Cada vez que o usuário registra uma nova data de compra e quando o gás acabou, o app calcula a duração e armazena esse dado no Firestore.
+
+O histórico deve ser exibido em uma tabela ou lista no app.
+
+Dados devem ser armazenados no Firestore com autenticação anônima ou pública (dependendo das regras).
+
+
+Cálculo da média de duração
+
+Com base no histórico salvo no Firestore, o app calcula automaticamente a média de dias que o gás costuma durar.
+
+Previsão da próxima data de término
+
+A partir da última data de compra + data que o gás acabou + média de duração, o app estima a data de fim do gás e informa quando deveria ter comprado o gás no caso de o gás já tenha acabado.
+
+
+Aviso de proximidade do término
+
+Quando faltar 5 dias ou menos para o gás acabar, o app exibe um alerta visual ou notificação do navegador (usando Notification API, com permissão do usuário).
+
+Notificações de aviso
+
+O aplicativo deve enviar um alerta ao usuário 5 dias antes da data estimada do gás acabar.
+
+
+Integração com Firebase:
+O app deve ser conectado ao Firebase Firestore usando a seguinte configuração:
+
+
+// Cole aqui o código do seu projeto Firebase:
+Para conectar o aplicativo ao seu próprio projeto do Firebase, cole abaixo as credenciais do seu Firebase.
+Vá até o console do Firebase, selecione seu projeto e copie o trecho de código de configuração como este:
+
+// Exemplo de configuração Firebase
+const firebaseConfig = {
+  apiKey: "SUA_API_KEY",
+  authDomain: "seu-projeto.firebaseapp.com",
+  projectId: "seu-projeto",
+  storageBucket: "seu-projeto.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abcdef123456"
+};
+
+
+
+Os dados devem ser salvos e lidos do Firestore usando a SDK modular do Firebase (v9+).
+
+Extras desejáveis:
+Interface responsiva e amigável.
+
+Validação dos campos de data.
+
+Cor de fundo Interface lilás e azul.
+
+coloque uma foto de gás na Interface, se possível.
+
+Possibilidade de deletar ou editar registros do histórico.
+deixe uma mensagem visível: Nunca mais seja pego de surpresa!
+
+Crie gráfico com interação para escolher Gráfico de barra ou Pizza que mostre a duração de cada botijão de gás ao longo do tempo.
+
+Dados para o gráfico:
+
+Eixo X (horizontal): A "Data Gás acabou" de cada registro. Isso permitiria ver a progressão temporal.
+Eixo Y (vertical): A "Duração (dias)" de cada botijão.    
+
+Se não tiver dados para exibir o resultado gráficos mostre o gráfico colorido para deixar com visual melhor. 
