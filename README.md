@@ -1,4 +1,4 @@
-# 🧠 App Previsão do Gás
+# 🤖🧠 App Previsão do Gás
 
 Aplicativo criado com ajuda de inteligência artificial para prever o consumo de gás.
 
