@@ -1,4 +1,4 @@
-# 🤖🧠 App Previsão do Gás
+# 🤖🧠 prompts App Previsão do Gás
 
 Aplicativo criado com ajuda de inteligência artificial para prever o consumo de gás.
 
@@ -10,9 +10,7 @@ Aplicativo criado com ajuda de inteligência artificial para prever o consumo de
 
 ## 📄 Como usar
 
-1. Clone ou baixe o projeto
-2. Abra `index.html` em seu navegador
-3. Cole sua configuração Firebase no lugar indicado no código:
+1. Cole sua configuração Firebase no lugar indicado no código:
 
 ```js
 // Exemplo
